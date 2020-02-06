@@ -1,0 +1,12 @@
+.divisoria {
+    height: 15px;
+    background-image: linear-gradient(to left, rgb(235, 55, 55), rgb(195, 46, 46) 100%);
+    border: 2px solid rgb(22, 22, 22);
+    border-radius: 4px;
+}
+
+.divisoria .s1 {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    height: 15px;
+}

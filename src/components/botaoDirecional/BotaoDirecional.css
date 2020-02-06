@@ -1,0 +1,13 @@
+.fotoDirecional {
+    max-width: 80px;
+}
+
+.btnLaterais {
+    display: inline-block;
+}
+
+.BotaoDirecional {
+    margin-top: 60px;
+    border-radius: 100px;
+    padding-top: 10px;
+}

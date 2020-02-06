@@ -1,0 +1,62 @@
+#ligado {
+    animation-name: abertura;
+    animation-duration: 2s;
+    background-color: rgb(21, 79, 255);
+    height: 180px;
+    padding-top: 30px;
+}
+.pokedex-title {
+    max-width: 200px;
+    animation-name: abertura-pokedex;
+    animation-duration: 1s;
+}
+
+.pokedex-pokemons-title1 {
+    width: 50px;
+    animation-name: abertura-pokedex-pokemon;
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+}
+.pokedex-pokemons-title2 {
+    width: 50px;
+    animation-name: abertura-pokedex-pokemon;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+}
+.pokedex-pokemons-title3 {
+    width: 50px;
+    animation-name: abertura-pokedex-pokemon;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes abertura {
+    0%   {
+        background-color: rgb(17, 17, 17);
+    }
+    100% {
+        background-color: rgb(21, 79, 255);
+    }
+}
+
+@keyframes abertura-pokedex {
+    0%   {
+        margin-left: 30px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes abertura-pokedex-pokemon {
+    0%   {
+        width: 50px;
+    }
+    25% {
+        width: 70px;
+    }
+    100% {
+        width: 50px;
+    }
+}
