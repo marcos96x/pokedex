@@ -1,0 +1,58 @@
+@media screen and (min-width: 0px) and (max-width: 699px) {
+    .Body {
+        background-image: linear-gradient(to right, rgb(104, 174, 255), rgb(61, 80, 255) 100%);
+    }
+    
+    .fotoPokemon {
+        max-width: 250px;
+        margin-top: 80px;
+        padding-left: 50px;
+    }
+    
+    .informacoesLaterais {
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .informacoesLaterais h1 {
+        -webkit-text-stroke-width: 1.5px; 
+        -webkit-text-stroke-color: rgb(26, 5, 212);
+        color: rgb(246, 250, 16);
+        font-size: 40px;
+        text-shadow: 2px 1px 5px rgb(26, 5, 212);
+    }
+
+    .informacoesLaterais h5 {
+        color: rgb(34, 34, 34);
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .Body {
+        background-image: linear-gradient(to right, rgb(104, 174, 255), rgb(61, 80, 255) 100%);
+    }
+    
+    .fotoPokemon {
+        max-width: 400px;
+        margin-top: 30px;
+    }
+    
+    .informacoesLaterais {
+        margin-top: 80px;
+    }
+    
+    .informacoesLaterais h1 {
+        -webkit-text-stroke-width: 3px; 
+        -webkit-text-stroke-color: rgb(26, 5, 212);
+        color: rgb(246, 250, 16);
+        font-size: 70px;
+        text-shadow: 2px 1px 7px rgb(26, 5, 212);
+    }
+
+    .informacoesLaterais h5 {
+        color: rgb(37, 37, 37);
+        font-size: 15px;
+        margin-top: -20px;
+    }
+}

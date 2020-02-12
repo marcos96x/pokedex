@@ -1,0 +1,56 @@
+.Header {
+    background-color: rgba(0, 0, 0, 0.411);
+    height: 110px;
+    text-align: center;
+}
+
+.pokeballImage {
+    max-width: 90px;
+    animation: pokeball-spin infinite 15s linear;
+    margin-top: 10px;
+    float: left;
+    transition-duration: 0.2s;
+}
+
+.title {
+    max-width: 200px;
+    float: right;
+    padding-top: 15px;
+}
+
+.Header h2 {
+    font-size: 40px;
+    color: rgb(251, 255, 39);
+    text-shadow: -4px 2px 9px rgb(15, 48, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+    @keyframes pokeball-spin {
+        0% {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+        50% {
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+        100% {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    @keyframes pokeball-spin {
+        0% {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+        50% {
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+        100% {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+    }
+}
+
+  

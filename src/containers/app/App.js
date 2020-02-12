@@ -1,30 +1,24 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+	BrowserRouter as Router,
+	Switch,
+	Route
 } from 'react-router-dom';
 
-import IndexPage from './../indexPage/IndexPage';
+import HomePage from './../../components/Index/Index';
 
 import './App.css';
 
 function App() {
-    return (
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <IndexPage navigation="off"/>
-          </Route>
-          <Route exact path="/off">
-            <IndexPage navigation="off"/>
-          </Route>
-          <Route exact path="/on">
-            <IndexPage navigation="on"/>
-          </Route>
-        </Switch>
-      </Router>
-    );
+	return (
+		<Router>
+			<Switch>
+				<Route exact path="/">
+					<HomePage />
+				</Route>
+			</Switch>
+		</Router>
+	);
 }
 
-module.exports =  App;
+module.exports = App;
