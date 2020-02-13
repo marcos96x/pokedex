@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
@@ -33,6 +33,18 @@ import './FormSearch.css';
 
 export default function FormSearch() {
     const classes = useStyles();
+    const [pokemonType, setPokemonType] = useState(0);
+    const [search, setSearch] = useState("");
+
+    function handlePokemonType(e) {
+        e.preventDefault();
+        setPokemonType(e.target.value);
+    }
+
+    function handleSearch(e) {
+        e.preventDefault();
+        setSearch(e.target.value);
+    }
 
     return (
         <div className="FormSearch">
@@ -43,15 +55,32 @@ export default function FormSearch() {
                             <Select
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
-                                value={1}
+                                value={pokemonType}
+                                onChange={(e) => handlePokemonType(e)}
                             >
-                                <MenuItem value={1}>Fogo</MenuItem>
-                                <MenuItem value={2}>Água</MenuItem>
-                                <MenuItem value={3}>Terra</MenuItem>
-                                <MenuItem value={3}>Ar</MenuItem>
-                                <MenuItem value={3}>Elétrico</MenuItem>
+                                <MenuItem value={0}>*</MenuItem>
+                                <MenuItem value={1}>Planta</MenuItem>
+                                <MenuItem value={2}>Fogo</MenuItem>
+                                <MenuItem value={3}>Água</MenuItem>
+                                <MenuItem value={4}>Inseto</MenuItem>
+                                <MenuItem value={5}>Normal</MenuItem>
+                                <MenuItem value={6}>Venenoso</MenuItem>
+                                <MenuItem value={7}>Elétrico</MenuItem>
+                                <MenuItem value={8}>Terra</MenuItem>
+                                <MenuItem value={9}>Lutador</MenuItem>
+                                <MenuItem value={10}>Psíquico</MenuItem>
+                                <MenuItem value={11}>Pedra</MenuItem>
+                                <MenuItem value={12}>Voador</MenuItem>
+                                <MenuItem value={13}>Fantasma</MenuItem>
+                                <MenuItem value={14}>Gelo</MenuItem>
+                                <MenuItem value={15}>Dragão</MenuItem>
+                                <MenuItem value={16}>Metálico</MenuItem>
+                                <MenuItem value={17}>Noturno</MenuItem>
+                                <MenuItem value={18}>Fada</MenuItem>                                
                             </Select>
                             <InputBase
+                                value={search}
+                                onChange={(e) => handleSearch(e)}
                                 className={classes.input}
                                 placeholder="Pesquisar por um pokemon"
                                 inputProps={{ 'aria-label': 'Pesquisar por um pokemon' }}

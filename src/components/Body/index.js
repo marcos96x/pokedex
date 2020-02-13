@@ -29,11 +29,8 @@ export default function Body() {
               <Grid item xs={12} sm={6} justify="center" container>
                 <img src={picachu} alt="picachu" className="fotoPokemon picachu" />
               </Grid>
-              <Grid item s={12} sm={6}>
+              <Grid item s={12} sm={6} justify="center">
                 <div className="informacoesLaterais" >
-                  <h1>
-                    Pokedex React
-                  </h1>
                   <h5>
                     Procure por qualquer um dos mais de 600 pokemons existentes nesta pokedex online! Busque por nome, tipo ou elemento para ver informações do seu pokemon preferido!
                   </h5>
